@@ -5,6 +5,7 @@
 # sys.argv[2]: should be a number defining threshold for pvalue
 # sys.argv[3]: should be a number defining minimum number of samples/contrasts in which your genes must be expressing. This should be equal to or less than the number of contrast files generated 
 # An input like:"python Identify_DEGs_DESEQ2.py 2 0.01 15" means the script will yield the list of up-regulated genes at log2Foldchange >2, pvalue of <0.01 and expressing in atleast 15 samples
+
 import pandas as pd
 import sys
 print ("Identifying Upregulated genes at log2 foldchange:",sys.argv[1],", pvalue:",sys.argv[2],"for",sys.argv[3],"number of comparisons")
