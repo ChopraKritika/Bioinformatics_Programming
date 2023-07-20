@@ -12,7 +12,7 @@ print ("Identifying Upregulated genes at log2 foldchange:",sys.argv[1],", pvalue
 import os
 import glob
 path = os.getcwd()
-allFiles = glob.glob(path + "/*_.csv")
+allFiles = glob.glob(path + "/*_.csv") #"_.csv" can be replaced acc to your file naming
 list = []
 count = 0
 gene_list = []
