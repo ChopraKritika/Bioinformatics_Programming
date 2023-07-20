@@ -8,7 +8,7 @@ import os
 import sys
 import glob
 path = os.getcwd()
-allFiles = glob.glob(path + "/*_.csv")
+allFiles = glob.glob(path + "/*_.csv") #"_.csv" can be replaced acc to your file naming
 list = []
 df2 = pd.DataFrame()
 arr1 = []
