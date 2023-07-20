@@ -21,13 +21,13 @@
 import pandas as pd
 import sys
 
-small_file = pd.read_csv(sys.argv[1])
-big_file = pd.read_csv(sys.argv[2])
+file1 = pd.read_csv(sys.argv[1])
+file2 = pd.read_csv(sys.argv[2])
 
 values = []
-for i in small_file.index:
-    values.append(small_file.loc[i,sys.argv[3]])
+for i in file1.index:
+    values.append(file1.loc[i,sys.argv[3]])
 
-df = big_file[sys.argv[4]].isin(values)
+df = file2[sys.argv[4]].isin(values)
 
-big_file[df].to_csv("output.csv",index=False)
+file2[df].to_csv("output.csv",index=False)
