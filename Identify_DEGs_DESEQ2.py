@@ -1,5 +1,5 @@
-# This code identifies the Up-regulated genes from multiple files generated through pairwise comparisonsor say contrsts of multiple samples in DESEQ2
-# The code read all the contrasts files and extract overexpressed genes at the specified threshold of log2Foldchange, pvalue and minimum number of comparisons in which the genes must be expressed 
+# This code identifies the Up-regulated genes from multiple files generated through pairwise comparisons or say contrasts of multiple samples in DESEQ2
+# The code reads all the contrast files and extract overexpressed genes at the specified threshold of log2Foldchange, pvalue and minimum number of comparisons in which the genes must be expressed 
 # To run the script type: python scriptname.py sys.argv[1] sys.argv[2] sys.argv[3]
 # sys.argv[1]: should be a positive number defining threshold for log2Foldchange
 # sys.argv[2]: should be a number defining threshold for pvalue
